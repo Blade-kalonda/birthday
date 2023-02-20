@@ -1,0 +1,71 @@
+<!-- 
+ -- JavaScript quiz app
+ -- version: 1.0.0
+ -- By: Elias Abdurrahman
+ -- date: june 27, 2019
+ -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap core CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+		<!-- icon du domaine -->
+		<link rel="icon" href="assets/img/bl.png">
+
+    <title>Blade Quiz</title>
+	</head>
+
+<body class="bg-primary">
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+    <div class="container">
+        <a class="navbar-brand text-uppercase py-2 text-primary fw-bolder" href="#">
+            <img class="img rounded-circle mx-auto" style="width: 40px; height: 40px" src="assets/img/bl.png" alt="">
+            <span class="fs-6">Blade Kalonda</span>
+        </a>
+        <button
+            class="navbar-toggler text-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item pe-4">
+                    <a class="nav-link" href="index.html">Blade anniversaire</a>
+                </li>
+                <li class="nav-item pe-4">
+                    <a class="nav-link text-primary fw-bold" href="quiz.html">Blade quiz</a>
+                </li>
+                <li class="nav-item pe-4">
+                    <a class="nav-link" href="commande.html">Commandez un site pour votre anniversaire</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  
+  <div class="main-section">
+    <div class="quiz-holder" id="quizHolder">
+    </div>
+  </div>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/quiz.js"></script>
+  <script>
+    render(0);
+  </script>
+</body>
+
+</html>
